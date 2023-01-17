@@ -1,0 +1,13 @@
+---
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: eks-cluster-books
+  version: "1.20"
+  region: us-east-1
+
+managedNodeGroups:
+- name: eks-cluster-books-mng
+  desiredCapacity: 3
+  instanceType: m5.large

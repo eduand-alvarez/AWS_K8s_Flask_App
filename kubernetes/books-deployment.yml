@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: eks-sample-books-app
+  namespace: books-sample-app
+  labels:
+    app: bookdemo
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: bookdemo
+  template:
+    metadata:
+      labels:
+        app: bookdemo
+    spec:
+     containers:
+       - name: book-image-v3
+         image: 000257663186.dkr.ecr.us-east-1.amazonaws.com/books-api:latest
+         ports:
+           - containerPort: 80
+         imagePullPolicy: Always
