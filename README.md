@@ -6,7 +6,7 @@ This repository is meant to serve as walkthrough and template for kubernetes (k8
 
 # Contents
 
-## app Folder
+## app 
 This folder contains the code for the application image. 
 - Dockerfile contains the instructions for building an image
 - app.py contains the flask app
