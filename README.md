@@ -18,4 +18,20 @@ This folder contains the kubernetes and EKS configurations.
 - models-deployment.yml K8s deployment script
 - models-service.yml K8s service script
 
+## solution architecture
+The diagram below outlines the major components of the solution. 
 <img src="assets/K8s_sample_app_archi.drawio.png" alt="solution diagram" width="600"/>
+
+## Implementation Instructions
+1. Use docker cli to build image locally `docker build -t <image_tag> .`
+2. Install AWS cli and ensure you set permissions with `aws config`
+3. Create ECR registry and push image to ECR repo
+4. Install eksctl and kubectl 
+5. Create cluster config file
+6. Configure and launch cluster with eksctl
+7. Create kubernetes namespace
+8. Create kubernetes deployment and service .yml files
+9. Create deployment and service using `kubectl apply -f <filename>` 
+10. Check for status of deployment and service using `kubectl -n <namespace> get all`
+11. Retrieve load balancer external IP and make a HTTP request to test app 
+
