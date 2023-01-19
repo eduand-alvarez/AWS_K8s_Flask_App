@@ -35,3 +35,13 @@ The diagram below outlines the major components of the solution.
 10. Check for status of deployment and service using `kubectl -n <namespace> get all`
 11. Retrieve load balancer external IP and make a HTTP request to test app 
 
+## Troubleshooting
+1. EKS resources such as pods, replica groups, and nodes won't show up in AWS console unless you a IAM policy that gives you access. EKS resource details are not available on aws cli or eks sdk. 
+2. To force update pods with new image, update the name of the container in the deployment file and apply again. 
+3. If you want to access as a pod shell you can use `kubectl exec -it <pod id> -n <namespace> -- bash` (not recommended to have bash or powershell installed on production images) 
+
+
+## Helpful kube commands
+- Get Pod Info `kubectl -n <namespace> describe pod <pod id> 
+- Get Detailes of Deployemnt `kubectl get all -n <namespace>
+
