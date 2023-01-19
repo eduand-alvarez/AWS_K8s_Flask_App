@@ -18,4 +18,4 @@ This folder contains the kubernetes and EKS configurations.
 - models-deployment.yml K8s deployment script
 - models-service.yml K8s service script
 
-<img src="assets/K8s_sample_app_archi.drawio.png" alt="solution diagram" width="200"/>
+<img src="assets/K8s_sample_app_archi.drawio.png" alt="solution diagram" width="600"/>
