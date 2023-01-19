@@ -12,10 +12,10 @@ This folder contains the code for the application image.
 - app.py contains the flask app
 - requirements.txt has all of the dependancies for the application
 
-## Kubernetes
+## kubernetes
 This folder contains the kubernetes and EKS configurations. 
 - cluster.yml EKS cluster configuration script
 - models-deployment.yml K8s deployment script
 - models-service.yml K8s service script
 
-![Solution Diagram](assets/K8s_sample_app_archi.drawio.png)
+<img src="assets/K8s_sample_app_archi.drawio.png" alt="solution diagram" width="200"/>
