@@ -40,8 +40,3 @@ The diagram below outlines the major components of the solution.
 2. To force update pods with new image, update the name of the container in the deployment file and apply again. 
 3. If you want to access as a pod shell you can use `kubectl exec -it <pod id> -n <namespace> -- bash` (not recommended to have bash or powershell installed on production images) 
 
-
-## Helpful kube commands
-- Get Pod Info `kubectl -n <namespace> describe pod <pod id> 
-- Get Detailes of Deployemnt `kubectl get all -n <namespace>
-
