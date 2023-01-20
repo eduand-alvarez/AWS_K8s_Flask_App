@@ -1,4 +1,4 @@
-# Kubernetes-EKS-flask-demo-app
+# Sample AWS Kubernetes (K8s) Flask App Deployment
 
 
 # Description
