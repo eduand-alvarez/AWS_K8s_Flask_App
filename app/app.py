@@ -21,7 +21,7 @@ models = [
 ]
 @app.route('/', methods=['GET'])
 def home():
-    return '''<h1>VLib - Online Library</h1>
+    return '''<h1>VLib - Online Model Catalog</h1>
                 <p>A flask api implementation for saving ML model information. </p>'''
 
 @app.route('/api/models/all', methods=['GET'])
