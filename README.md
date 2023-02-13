@@ -24,7 +24,7 @@ The diagram below outlines the major components of the solution.
 
 ## Implementation Instructions
 1. Use docker cli to build image locally `docker build -t <image_tag> .`
-2. Install AWS cli and ensure you set permissions with `aws config`
+2. Install AWS cli and ensure you set permissions with `aws configure`
 3. Create ECR registry and push image to ECR repo
 4. Install eksctl and kubectl 
 5. Create cluster config file
