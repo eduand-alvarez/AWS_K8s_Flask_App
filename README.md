@@ -27,13 +27,14 @@ The diagram below outlines the major components of the solution.
 2. Install AWS cli and ensure you set permissions with `aws configure`
 3. Create ECR registry and push image to ECR repo
 4. Install eksctl and kubectl 
-5. Create cluster config file
-6. Configure and launch cluster with eksctl
+5. Create cluster config file 
+6. Configure and launch cluster with eksctl `eksctl create cluster -f cluster.yaml`
 7. Create kubernetes namespace `kubectl create namespace <namespace>`
 8. Create kubernetes deployment and service .yml files
-9. Create deployment and service using `kubectl apply -f <filename>` 
-10. Check for status of deployment and service using `kubectl -n <namespace> get all`
-11. Retrieve load balancer external IP and make a HTTP request to test app 
+10. Create deployment using `kubectl apply -f <filename>`
+11. Create service using `kubectl apply -f <filename>`
+12. Check for status of deployment and service using `kubectl -n <namespace> get all`
+13. Retrieve load balancer external IP and make a HTTP request to test app 
 
 ## Troubleshooting
 1. EKS resources such as pods, replica groups, and nodes won't show up in AWS console unless you a IAM policy that gives you access. EKS resource details are not available on aws cli or eks sdk. 
