@@ -29,7 +29,7 @@ The diagram below outlines the major components of the solution.
 4. Install eksctl and kubectl 
 5. Create cluster config file
 6. Configure and launch cluster with eksctl
-7. Create kubernetes namespace
+7. Create kubernetes namespace `kubectl create namespace <namespace>`
 8. Create kubernetes deployment and service .yml files
 9. Create deployment and service using `kubectl apply -f <filename>` 
 10. Check for status of deployment and service using `kubectl -n <namespace> get all`
